@@ -21,3 +21,14 @@ head(homicides)
 library(jsonlite)
 library(dplyr)
 library(tidyr)
+
+
+sub(pattern = "\\d{3}",replacement="", x = "Dom 335 kv 54 666")
+gsub(pattern = "\\d{3}",replacement="", x = "Dom 335 kv 54 434")
+
+
+sub(pattern = "\\d{3}",replacement="", x = "Dom 335 kv 54 666")
+gsub(pattern = "(\\d{3})",replacement="\\[\\1\\]", x = "Dom 335 kv 54 434")
+
+sub(pattern = "(\\d+,)(.+?,)",replacement="\\2\\1", x = "12, Lame ave., Low Palmes, UT")
+
