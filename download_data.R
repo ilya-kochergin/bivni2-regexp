@@ -17,3 +17,7 @@ unzip(zipfile = zipfile)
 homicides <-  readLines("homicides.txt")
 length(homicides)
 head(homicides)
+
+library(jsonlite)
+library(dplyr)
+library(tidyr)
