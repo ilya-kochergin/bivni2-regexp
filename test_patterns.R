@@ -26,3 +26,10 @@ test_pattern <- function(pat,text,...) {
   pos <- regexec(pat,text,useBytes = FALSE)
   sapply(X = regmatches(text,pos), FUN = function(x) x[2])
 }
+
+
+
+
+
+
+home

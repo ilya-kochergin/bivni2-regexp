@@ -7,4 +7,9 @@ library(leaflet)
 m <- leaflet() %>%
 addTiles() %>%  setView(lng = 37.6, lat = 55.7, zoom = 10)
 m
-m %>% addMarkers(data=veterinary,~lat,~long,popup=~ShortName,)
+m %>% addMarkers(data=veterinary,~lat,~long,popup=~ShortName)
+
+
+
+# library(dplyr)
+# veterinary %>% filter()
