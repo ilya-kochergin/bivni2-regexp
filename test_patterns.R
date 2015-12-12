@@ -28,8 +28,11 @@ test_pattern <- function(pat,text,...) {
 }
 
 
+## sub/gsub() demo
+sub(pattern = "\\d+",replacement = "<NO>",x = "10, Low palmes ave, Salt Lake City UT")
+sub(pattern = "\\d+",replacement = "",x = "10, Low palmes ave, Salt Lake City UT")
+sub(pattern = "(\\d+)",replacement = "<\\1>",x = "10, Low palmes ave, Salt Lake City UT")
+# exchange 2 gruops
+sub(pattern = "(\\d+,)(.+?,)",replacement = "\\2\\1",x = "10, Low palmes ave, Salt Lake City UT")
 
 
-
-
-home
